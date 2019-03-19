@@ -1,0 +1,106 @@
+/*
+* pages/index.scss
+*/
+
+@import '../var-name.scss';
+
+.content {
+    overflow: hidden;
+    .tips-wrapper {
+        width: 100%;
+        padding: $padding-sm;
+        overflow: hidden;
+        .tips-item {
+            float: left;
+            padding: $padding-sm/3 $padding-sm;
+            font-size: 12px;
+            color: $theme-default-color;
+            border: 1px solid $theme-default-color;
+            border-radius: 5px 5px;
+            margin: 0 10px;
+            &.active {
+                color: #fff;
+                border: 1px solid $theme-default-color;
+                background: $theme-default-color;
+            }
+        }
+    }
+    .article-wrapper {
+        overflow: hidden;
+        padding: $padding-sm;
+        .no-article {
+            text-align: center;
+        }
+        .get-more {
+            margin-top: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .article {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            padding-left: 150px;
+            .article-pic {
+                position: absolute;
+                width: 120px;
+                height: 120px;
+                top: 50%;
+                left: 15px;
+                transform: translateY(-50%);
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .article-text {
+                width: 100%;
+                height: 100%;
+                padding: $padding-sm 0;
+                .article-text-title {
+                    width: 100%;
+                    height: 30px;
+                    line-height: 30px;
+                    span.title{
+                        display: inline-block;
+                        width: 270px;
+                        height: 100%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        font-size: 16px;
+                        color: #333;
+                    }
+                    span.time {
+                        float: right;
+                        width: 170px;
+                        text-align: right;
+                        font-size: 12px;
+                        color: #333;
+                    }
+                }
+                .article-text-desc{
+                    width: 100%;
+                    height: 70px;
+                    font-size: 12px;
+                    color: #333;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 4;
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                    margin-top: 5px;
+                }
+                .article-text-focus {
+                    width: 100%;
+                    height: 20px;
+                    font-size: 12px;
+                    color: #333;
+                    span {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

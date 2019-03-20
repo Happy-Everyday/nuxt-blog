@@ -1,1 +1,0 @@
-{"version":3,"file":"5ac245d8cd4d299051bb.js","sources":["webpack:///./pages/words.vue"],"sourcesContent":["var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode(\"留言功能暂未开放\")])}\nvar staticRenderFns = []\n\nexport { render, staticRenderFns }"],"mappings":"AAAA","sourceRoot":""}
